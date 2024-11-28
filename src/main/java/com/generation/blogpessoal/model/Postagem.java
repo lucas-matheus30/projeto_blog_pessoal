@@ -2,6 +2,8 @@ package com.generation.blogpessoal.model;
 
 import java.time.LocalDateTime;
 
+import org.hibernate.annotations.UpdateTimestamp;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -25,6 +27,9 @@ public class Postagem {
 	@Size(min = 10, max = 1000, message = "O atributo texto deve conter no mínimo 10 e no máximo 1000 caracteres")
 	@NotBlank(message = "O atributo texto é obrigatório!")
 	private String texto;
+	
+	@UpdateTimestamp
+	private LocalDateTime data;
 	
 	public Long getId() {
 		return id;
@@ -58,5 +63,5 @@ public class Postagem {
 		this.data = data;
 	}
 
-	private LocalDateTime data;
+	
 }
