@@ -25,7 +25,7 @@ Banco de Dados: SQL
 
 Arquitetura: RESTful API 
 
-Docker, Render. 
+Conteinerização: Docker
 
 ## 🛠️ Funcionalidades
 = CRUD de Postagens: Permite Criar, Listar, Editar e Excluir Postagens;
